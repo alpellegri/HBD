@@ -1,0 +1,151 @@
+[ @file = "G:\garmin\projects\HBD\source\HBDView.mc"; @line = 1; ]
+import Toybox.Activity;
+[ @file = "G:\garmin\projects\HBD\source\HBDView.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "G:\garmin\projects\HBD\source\HBDView.mc"; @line = 3; ]
+import Toybox.Time;
+[ @file = "G:\garmin\projects\HBD\source\HBDView.mc"; @line = 4; ]
+import Toybox.WatchUi;
+[ @file = "G:\garmin\projects\HBD\source\HBDView.mc"; @line = 5; ]
+import Toybox.UserProfile;
+[ @file = "G:\garmin\projects\HBD\source\HBDView.mc"; @line = 6; ]
+using Toybox.System;
+[ @file = "G:\garmin\projects\HBD\source\HBDView.mc"; @line = 8; ]
+class HBDView extends WatchUi.SimpleDataField{
+    [ @file = "G:\garmin\projects\HBD\source\HBDView.mc"; @line = 8; ]
+    <init> {
+    }
+    [ @file = "G:\garmin\projects\HBD\source\HBDView.mc"; @line = 8; ]
+    static
+    <init> {
+    }
+    [ @file = "G:\garmin\projects\HBD\source\HBDView.mc"; @line = 10; @position = 15; ]
+    protected
+    var mValue;
+    [ @file = "G:\garmin\projects\HBD\source\HBDView.mc"; @line = 11; @position = 15; ]
+    protected
+    var mRHR as Numeric;
+    [ @file = "G:\garmin\projects\HBD\source\HBDView.mc"; @line = 14; ]
+    function initialize() as Void {
+G_garmin_projects_HBD_source_HBDView_mc_14_26_start:
+[ "G:\garmin\projects\HBD\source\HBDView.mc" 15 8 ]
+        %tmp.2 = getv ? :SimpleDataField;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "G:\garmin\projects\HBD\source\HBDView.mc" 16 8 ]
+        [ "G_garmin_projects_HBD_source_HBDView_mc_14_26_start" "G_garmin_projects_HBD_source_HBDView_mc_14_26_stop" ]
+        %profile.1 = local;
+        %tmp.4 = getm $.Toybox.UserProfile;
+        %tmp.5 = getv function %tmp.4 :getProfile;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        lputv %profile.1 %tmp.6;
+[ "G:\garmin\projects\HBD\source\HBDView.mc" 17 8 ]
+        %tmp.7 = lgetv %profile.1;
+        %tmp.8 = getv %tmp.7 :restingHeartRate;
+        putv self :mRHR %tmp.8;
+[ "G:\garmin\projects\HBD\source\HBDView.mc" 18 8 ]
+        %tmp.9 = "HBD";
+        putv self :label %tmp.9;
+[ "G:\garmin\projects\HBD\source\HBDView.mc" 19 8 ]
+        %tmp.10 = 0.0f;
+        putv self :mValue %tmp.10;
+G_garmin_projects_HBD_source_HBDView_mc_14_26_stop:
+    }
+    [ @file = "G:\garmin\projects\HBD\source\HBDView.mc"; @line = 26; ]
+    function compute(info as Activity.Info) as Numeric or Duration or String or Null {
+G_garmin_projects_HBD_source_HBDView_mc_26_85_start:
+[ "G:\garmin\projects\HBD\source\HBDView.mc" 28 8 ]
+        %tmp.1 = 0.0;
+        putv self :mValue %tmp.1;
+[ "G:\garmin\projects\HBD\source\HBDView.mc" 29 8 ]
+G_garmin_projects_HBD_source_HBDView_mc_29_8_if_stmt:
+G_garmin_projects_HBD_source_HBDView_mc_29_12_begin:
+        %tmp.3 = lgetv %info;
+        %tmp.5 = const :currentHeartRate;
+        %tmp.6 = canhazplz %tmp.3 %tmp.5;
+        %tmp.7 = dup %tmp.6;
+        bf %tmp.7 @G_garmin_projects_HBD_source_HBDView_mc_29_44_end;
+G_garmin_projects_HBD_source_HBDView_mc_29_44_true:
+        %tmp.9 = lgetv %info;
+        %tmp.10 = as %tmp.9 { (interface { var currentHeartRate; }) };
+        %tmp.12 = const :currentSpeed;
+        %tmp.13 = canhazplz %tmp.10 %tmp.12;
+        %tmp.14 = and %tmp.6 %tmp.13;
+        push %tmp.14;
+G_garmin_projects_HBD_source_HBDView_mc_29_44_end:
+        %tmp.15 = phi [%tmp.7 @G_garmin_projects_HBD_source_HBDView_mc_29_12_begin] [%tmp.14 @G_garmin_projects_HBD_source_HBDView_mc_29_44_true] [%tmp.15 @G_garmin_projects_HBD_source_HBDView_mc_29_44_end];
+        bf %tmp.15 @G_garmin_projects_HBD_source_HBDView_mc_29_8_if_end;
+G_garmin_projects_HBD_source_HBDView_mc_29_8_if_true:
+G_garmin_projects_HBD_source_HBDView_mc_29_70_start:
+[ "G:\garmin\projects\HBD\source\HBDView.mc" 30 12 ]
+G_garmin_projects_HBD_source_HBDView_mc_30_12_if_stmt:
+G_garmin_projects_HBD_source_HBDView_mc_30_16_begin:
+        %tmp.16 = lgetv %info;
+        %tmp.17 = as %tmp.16 { (interface { var currentHeartRate; }) && (interface { var currentSpeed; }) };
+        %tmp.18 = getv %tmp.17 :currentHeartRate;
+        %tmp.19 = null;
+        %tmp.20 = ne %tmp.18 %tmp.19;
+        %tmp.21 = dup %tmp.20;
+        bf %tmp.21 @G_garmin_projects_HBD_source_HBDView_mc_30_51_end;
+G_garmin_projects_HBD_source_HBDView_mc_30_51_true:
+        %tmp.22 = lgetv %info;
+        %tmp.23 = as %tmp.22 { (interface { var currentHeartRate; }) && (interface { var currentSpeed; }) };
+        %tmp.24 = getv %tmp.23 :currentSpeed;
+        %tmp.25 = null;
+        %tmp.26 = ne %tmp.24 %tmp.25;
+        %tmp.27 = and %tmp.20 %tmp.26;
+        push %tmp.27;
+G_garmin_projects_HBD_source_HBDView_mc_30_51_end:
+        %tmp.28 = phi [%tmp.21 @G_garmin_projects_HBD_source_HBDView_mc_30_16_begin] [%tmp.27 @G_garmin_projects_HBD_source_HBDView_mc_30_51_true] [%tmp.28 @G_garmin_projects_HBD_source_HBDView_mc_30_51_end];
+        bf %tmp.28 @G_garmin_projects_HBD_source_HBDView_mc_30_12_if_end;
+G_garmin_projects_HBD_source_HBDView_mc_30_12_if_true:
+G_garmin_projects_HBD_source_HBDView_mc_30_80_start:
+[ "G:\garmin\projects\HBD\source\HBDView.mc" 31 16 ]
+        [ "G_garmin_projects_HBD_source_HBDView_mc_30_80_start" "G_garmin_projects_HBD_source_HBDView_mc_30_80_stop" ]
+        %delta.1 = local;
+        %tmp.29 = lgetv %info;
+        %tmp.30 = as %tmp.29 { (interface { var currentHeartRate; }) && (interface { var currentSpeed; }) };
+        %tmp.31 = getv %tmp.30 :currentHeartRate;
+        %tmp.32 = as %tmp.31 Number;
+        lputv %delta.1 %tmp.32;
+[ "G:\garmin\projects\HBD\source\HBDView.mc" 33 16 ]
+        [ "G_garmin_projects_HBD_source_HBDView_mc_30_80_start" "G_garmin_projects_HBD_source_HBDView_mc_30_80_stop" ]
+        %vo2.2 = local;
+        %tmp.33 = 60;
+        %tmp.34 = lgetv %info;
+        %tmp.35 = as %tmp.34 { (interface { var currentHeartRate; }) && (interface { var currentSpeed; }) };
+        %tmp.36 = getv %tmp.35 :currentSpeed;
+        %tmp.37 = as %tmp.36 Float;
+        %tmp.38 = mul %tmp.33 %tmp.37;
+        lputv %vo2.2 %tmp.38;
+[ "G:\garmin\projects\HBD\source\HBDView.mc" 35 16 ]
+G_garmin_projects_HBD_source_HBDView_mc_35_16_if_stmt:
+        %tmp.40 = lgetv %delta.1;
+        %tmp.41 = 0.0;
+        %tmp.42 = gt %tmp.40 %tmp.41;
+        bf %tmp.42 @G_garmin_projects_HBD_source_HBDView_mc_35_16_if_end;
+G_garmin_projects_HBD_source_HBDView_mc_35_16_if_true:
+G_garmin_projects_HBD_source_HBDView_mc_36_16_start:
+[ "G:\garmin\projects\HBD\source\HBDView.mc" 37 20 ]
+        %tmp.44 = lgetv %vo2.2;
+        %tmp.46 = lgetv %delta.1;
+        %tmp.47 = div %tmp.44 %tmp.46;
+        putv self :mValue %tmp.47;
+G_garmin_projects_HBD_source_HBDView_mc_36_16_stop:
+        goto @G_garmin_projects_HBD_source_HBDView_mc_35_16_if_end;
+G_garmin_projects_HBD_source_HBDView_mc_35_16_if_end:
+G_garmin_projects_HBD_source_HBDView_mc_30_80_stop:
+        goto @G_garmin_projects_HBD_source_HBDView_mc_30_12_if_end;
+G_garmin_projects_HBD_source_HBDView_mc_30_12_if_end:
+G_garmin_projects_HBD_source_HBDView_mc_29_70_stop:
+        goto @G_garmin_projects_HBD_source_HBDView_mc_29_8_if_end;
+G_garmin_projects_HBD_source_HBDView_mc_29_8_if_end:
+[ "G:\garmin\projects\HBD\source\HBDView.mc" 41 8 ]
+        %tmp.49 = getv ? :mValue;
+        ret %tmp.49;
+G_garmin_projects_HBD_source_HBDView_mc_26_85_stop:
+    }
+}
+[ @file = "G:\garmin\projects\HBD\source\HBDView.mc"; @line = 1; ]
+<init> {
+}
