@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <debugInfo>
-    <manifest filename="G:\garmin\projects\HBD\manifest.xml"/>
+    <manifest filename="E:\GitHub\HBD\manifest.xml"/>
     <pcToLineNum>
-        <entry filename="G:\\garmin\\projects\\HBD\\source\\HBDApp.mc" id="1" lineNum="26" parent="globals" pc="268435460" symbol="getApp"/>
-        <entry filename="G:\\garmin\\projects\\HBD\\source\\HBDApp.mc" id="1" lineNum="27" parent="globals" pc="268435470" symbol="getApp"/>
-        <entry filename="g:\\garmin\\projects\\HBD\\bin\\gen\\006-B4315-00\\source\\Rez.mcgen" id="2" lineNum="7" parent="globals/Rez" pc="268435486" symbol="&lt;init&gt;"/>
-        <entry filename="G:\\garmin\\projects\\HBD\\source\\HBDView.mc" id="3" lineNum="8" parent="globals/HBDView" pc="268435510" symbol="&lt;init&gt;"/>
-        <entry filename="G:\\garmin\\projects\\HBD\\source\\HBDView.mc" id="4" lineNum="26" parent="globals/HBDView" pc="268435529" symbol="compute"/>
-        <entry filename="G:\\garmin\\projects\\HBD\\source\\HBDView.mc" id="4" lineNum="28" parent="globals/HBDView" pc="268435533" symbol="compute"/>
-        <entry filename="G:\\garmin\\projects\\HBD\\source\\HBDView.mc" id="4" lineNum="29" parent="globals/HBDView" pc="268435546" symbol="compute"/>
-        <entry filename="G:\\garmin\\projects\\HBD\\source\\HBDView.mc" id="4" lineNum="30" parent="globals/HBDView" pc="268435571" symbol="compute"/>
-        <entry filename="G:\\garmin\\projects\\HBD\\source\\HBDView.mc" id="4" lineNum="31" parent="globals/HBDView" pc="268435600" symbol="compute"/>
-        <entry filename="G:\\garmin\\projects\\HBD\\source\\HBDView.mc" id="4" lineNum="33" parent="globals/HBDView" pc="268435610" symbol="compute"/>
-        <entry filename="G:\\garmin\\projects\\HBD\\source\\HBDView.mc" id="4" lineNum="35" parent="globals/HBDView" pc="268435626" symbol="compute"/>
-        <entry filename="G:\\garmin\\projects\\HBD\\source\\HBDView.mc" id="4" lineNum="37" parent="globals/HBDView" pc="268435637" symbol="compute"/>
-        <entry filename="G:\\garmin\\projects\\HBD\\source\\HBDView.mc" id="4" lineNum="41" parent="globals/HBDView" pc="268435659" symbol="compute"/>
-        <entry filename="G:\\garmin\\projects\\HBD\\source\\HBDView.mc" id="5" lineNum="14" parent="globals/HBDView" pc="268435668" symbol="initialize"/>
-        <entry filename="G:\\garmin\\projects\\HBD\\source\\HBDView.mc" id="5" lineNum="15" parent="globals/HBDView" pc="268435672" symbol="initialize"/>
-        <entry filename="G:\\garmin\\projects\\HBD\\source\\HBDView.mc" id="5" lineNum="16" parent="globals/HBDView" pc="268435690" symbol="initialize"/>
-        <entry filename="G:\\garmin\\projects\\HBD\\source\\HBDView.mc" id="5" lineNum="17" parent="globals/HBDView" pc="268435707" symbol="initialize"/>
-        <entry filename="G:\\garmin\\projects\\HBD\\source\\HBDView.mc" id="5" lineNum="18" parent="globals/HBDView" pc="268435723" symbol="initialize"/>
-        <entry filename="G:\\garmin\\projects\\HBD\\source\\HBDView.mc" id="5" lineNum="19" parent="globals/HBDView" pc="268435736" symbol="initialize"/>
-        <entry filename="G:\\garmin\\projects\\HBD\\source\\HBDApp.mc" id="6" lineNum="5" parent="globals/HBDApp" pc="268435750" symbol="&lt;init&gt;"/>
-        <entry filename="G:\\garmin\\projects\\HBD\\source\\HBDApp.mc" id="7" lineNum="12" parent="globals/HBDApp" pc="268435769" symbol="onStart"/>
-        <entry filename="G:\\garmin\\projects\\HBD\\source\\HBDApp.mc" id="8" lineNum="20" parent="globals/HBDApp" pc="268435772" symbol="getInitialView"/>
-        <entry filename="G:\\garmin\\projects\\HBD\\source\\HBDApp.mc" id="8" lineNum="21" parent="globals/HBDApp" pc="268435774" symbol="getInitialView"/>
-        <entry filename="G:\\garmin\\projects\\HBD\\source\\HBDApp.mc" id="9" lineNum="7" parent="globals/HBDApp" pc="268435815" symbol="initialize"/>
-        <entry filename="G:\\garmin\\projects\\HBD\\source\\HBDApp.mc" id="9" lineNum="8" parent="globals/HBDApp" pc="268435817" symbol="initialize"/>
-        <entry filename="G:\\garmin\\projects\\HBD\\source\\HBDApp.mc" id="10" lineNum="16" parent="globals/HBDApp" pc="268435836" symbol="onStop"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDApp.mc" id="1" lineNum="26" parent="globals" pc="268435460" symbol="getApp"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDApp.mc" id="1" lineNum="27" parent="globals" pc="268435470" symbol="getApp"/>
+        <entry filename="e:\\GitHub\\HBD\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="2" lineNum="7" parent="globals/Rez" pc="268435486" symbol="&lt;init&gt;"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="3" lineNum="8" parent="globals/HBDView" pc="268435510" symbol="&lt;init&gt;"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="4" lineNum="26" parent="globals/HBDView" pc="268435529" symbol="compute"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="4" lineNum="28" parent="globals/HBDView" pc="268435533" symbol="compute"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="4" lineNum="29" parent="globals/HBDView" pc="268435546" symbol="compute"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="4" lineNum="30" parent="globals/HBDView" pc="268435571" symbol="compute"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="4" lineNum="31" parent="globals/HBDView" pc="268435600" symbol="compute"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="4" lineNum="33" parent="globals/HBDView" pc="268435610" symbol="compute"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="4" lineNum="35" parent="globals/HBDView" pc="268435626" symbol="compute"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="4" lineNum="37" parent="globals/HBDView" pc="268435637" symbol="compute"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="4" lineNum="41" parent="globals/HBDView" pc="268435659" symbol="compute"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="5" lineNum="14" parent="globals/HBDView" pc="268435668" symbol="initialize"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="5" lineNum="15" parent="globals/HBDView" pc="268435672" symbol="initialize"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="5" lineNum="16" parent="globals/HBDView" pc="268435690" symbol="initialize"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="5" lineNum="17" parent="globals/HBDView" pc="268435707" symbol="initialize"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="5" lineNum="18" parent="globals/HBDView" pc="268435723" symbol="initialize"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="5" lineNum="19" parent="globals/HBDView" pc="268435736" symbol="initialize"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDApp.mc" id="6" lineNum="5" parent="globals/HBDApp" pc="268435750" symbol="&lt;init&gt;"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDApp.mc" id="7" lineNum="12" parent="globals/HBDApp" pc="268435769" symbol="onStart"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDApp.mc" id="8" lineNum="20" parent="globals/HBDApp" pc="268435772" symbol="getInitialView"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDApp.mc" id="8" lineNum="21" parent="globals/HBDApp" pc="268435774" symbol="getInitialView"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDApp.mc" id="9" lineNum="7" parent="globals/HBDApp" pc="268435815" symbol="initialize"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDApp.mc" id="9" lineNum="8" parent="globals/HBDApp" pc="268435817" symbol="initialize"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDApp.mc" id="10" lineNum="16" parent="globals/HBDApp" pc="268435836" symbol="onStop"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
