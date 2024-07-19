@@ -17,9 +17,4 @@ If you ran 10 kilometers and your average heart rate was 150 beats per minute (b
 Total Heart Beats = 150 bpm * 50 minutes = 7500 beats
 HBD = 1000 [m] / 7500 [b] = 1.33 [m/b]
 
-    pace = 4 [min/km]
-    v = 1000 [m] /(60 * pace [min/km]) = 4.16 [m/s]
-
-    HDB = 4.16 [m/s] * 60 / HR [b/min] = 2.27 [m/b]
-
 By monitoring HBD over time, you can gain insights into improvements in your cardiovascular efficiency and overall fitness.
