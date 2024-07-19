@@ -110,14 +110,14 @@ E_GitHub_HBD_source_HBDView_mc_30_80_start:
         lputv %delta.1 %tmp.32;
 [ "E:\GitHub\HBD\source\HBDView.mc" 33 16 ]
         [ "E_GitHub_HBD_source_HBDView_mc_30_80_start" "E_GitHub_HBD_source_HBDView_mc_30_80_stop" ]
-        %vo2.2 = local;
+        %v.2 = local;
         %tmp.33 = 60;
         %tmp.34 = lgetv %info;
         %tmp.35 = as %tmp.34 { (interface { var currentHeartRate; }) && (interface { var currentSpeed; }) };
         %tmp.36 = getv %tmp.35 :currentSpeed;
         %tmp.37 = as %tmp.36 Float;
         %tmp.38 = mul %tmp.33 %tmp.37;
-        lputv %vo2.2 %tmp.38;
+        lputv %v.2 %tmp.38;
 [ "E:\GitHub\HBD\source\HBDView.mc" 35 16 ]
 E_GitHub_HBD_source_HBDView_mc_35_16_if_stmt:
         %tmp.40 = lgetv %delta.1;
@@ -127,7 +127,7 @@ E_GitHub_HBD_source_HBDView_mc_35_16_if_stmt:
 E_GitHub_HBD_source_HBDView_mc_35_16_if_true:
 E_GitHub_HBD_source_HBDView_mc_36_16_start:
 [ "E:\GitHub\HBD\source\HBDView.mc" 37 20 ]
-        %tmp.44 = lgetv %vo2.2;
+        %tmp.44 = lgetv %v.2;
         %tmp.46 = lgetv %delta.1;
         %tmp.47 = div %tmp.44 %tmp.46;
         putv self :mValue %tmp.47;

@@ -30,11 +30,11 @@ class HBDView extends WatchUi.SimpleDataField {
             if ((info.currentHeartRate != null) && (info.currentSpeed != null)) {
                 var delta = (info.currentHeartRate as Number);
                 // System.println("currentSpeed: " + info.currentSpeed);
-                var vo2 = 60 * (info.currentSpeed as Float);
+                var v = 60*(info.currentSpeed as Float);
                 // System.println("vo2: " + vo2);
                 if (delta > 0.0)
                 {
-                    mValue = vo2/delta;
+                    mValue = v/delta;
                 }
             }
         }

@@ -4,7 +4,7 @@
     <pcToLineNum>
         <entry filename="E:\\GitHub\\HBD\\source\\HBDApp.mc" id="1" lineNum="26" parent="globals" pc="268435460" symbol="getApp"/>
         <entry filename="E:\\GitHub\\HBD\\source\\HBDApp.mc" id="1" lineNum="27" parent="globals" pc="268435470" symbol="getApp"/>
-        <entry filename="e:\\GitHub\\HBD\\bin\\gen\\006-B3992-00\\source\\Rez.mcgen" id="2" lineNum="7" parent="globals/Rez" pc="268435486" symbol="&lt;init&gt;"/>
+        <entry filename="e:\\GitHub\\HBD\\bin\\gen\\006-B3993-00\\source\\Rez.mcgen" id="2" lineNum="7" parent="globals/Rez" pc="268435486" symbol="&lt;init&gt;"/>
         <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="3" lineNum="8" parent="globals/HBDView" pc="268435510" symbol="&lt;init&gt;"/>
         <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="4" lineNum="26" parent="globals/HBDView" pc="268435529" symbol="compute"/>
         <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="4" lineNum="28" parent="globals/HBDView" pc="268435533" symbol="compute"/>
@@ -74,7 +74,7 @@
     <localVars>
         <entry arg="true" endPc="268435667" name="info" stackId="1" startPc="268435529"/>
         <entry endPc="268435652" name="delta" stackId="2" startPc="268435600"/>
-        <entry endPc="268435652" name="vo2" stackId="3" startPc="268435600"/>
+        <entry endPc="268435652" name="v" stackId="3" startPc="268435600"/>
         <entry endPc="268435748" name="profile" stackId="1" startPc="268435672"/>
     </localVars>
     <annotations>
