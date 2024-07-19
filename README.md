@@ -15,6 +15,7 @@ HBD provides a simple yet effective measure to gauge how efficiently your heart 
 If you ran 10 kilometers and your average heart rate was 150 beats per minute (bpm) over a period of 50 minutes, the total number of heartbeats can be calculated as:
 
 Total Heart Beats = 150 bpm * 50 minutes = 7500 beats
+
 HBD = 1000 [m] / 7500 [b] = 1.33 [m/b]
 
 By monitoring HBD over time, you can gain insights into improvements in your cardiovascular efficiency and overall fitness.
