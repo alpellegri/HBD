@@ -3,20 +3,41 @@ import Toybox.Lang;
 import Toybox.Time;
 import Toybox.WatchUi;
 import Toybox.UserProfile;
-using Toybox.System;
+import Toybox.System;
+import Toybox.Application;
+import Toybox.Application.Storage;
+using Toybox.FitContributor as Fit;
 
 class HBDView extends WatchUi.SimpleDataField {
 
+    var HbdField = null;
     hidden var mValue;
     hidden var mRHR as Numeric;
+    var use_rhr;
+
+    const HBD_FIELD_ID = 0;
 
     // Set the label of the data field here.
     function initialize() {
         SimpleDataField.initialize();
-        var profile = UserProfile.getProfile();
-        mRHR = profile.restingHeartRate;
         label = "HBD";
         mValue = 0.0f;
+        mRHR = 0;
+        use_rhr = Properties.getValue("boolean_prop");
+        if (use_rhr) {
+            var profile = UserProfile.getProfile();
+            mRHR = profile.restingHeartRate;
+        }
+
+        // Create the custom FIT data field we want to record.
+        HbdField = createField(
+            "HBD",
+            HBD_FIELD_ID,
+            FitContributor.DATA_TYPE_FLOAT,
+            {:mesgType=>Fit.MESG_TYPE_RECORD, :units=>"m"}
+        );
+
+        HbdField.setData(0.0);
     }
 
     // The given info object contains all the current workout
@@ -28,16 +49,16 @@ class HBDView extends WatchUi.SimpleDataField {
         mValue = 0.0;
         if ((info has :currentHeartRate) && (info has :currentSpeed)) {
             if ((info.currentHeartRate != null) && (info.currentSpeed != null)) {
-                var delta = (info.currentHeartRate as Number);
-                // System.println("currentSpeed: " + info.currentSpeed);
+                var delta = (info.currentHeartRate as Number) - mRHR;
                 var v = 60*(info.currentSpeed as Float);
-                // System.println("vo2: " + vo2);
                 if (delta > 0.0)
                 {
                     mValue = v/delta;
                 }
             }
         }
+
+        HbdField.setData(mValue);
         return mValue;
     }
 }

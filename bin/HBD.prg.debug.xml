@@ -4,145 +4,141 @@
     <pcToLineNum>
         <entry filename="E:\\GitHub\\HBD\\source\\HBDApp.mc" id="1" lineNum="26" parent="globals" pc="268435460" symbol="getApp"/>
         <entry filename="E:\\GitHub\\HBD\\source\\HBDApp.mc" id="1" lineNum="27" parent="globals" pc="268435470" symbol="getApp"/>
-        <entry filename="e:\\GitHub\\HBD\\bin\\gen\\006-B3993-00\\source\\Rez.mcgen" id="2" lineNum="7" parent="globals/Rez" pc="268435486" symbol="&lt;init&gt;"/>
-        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="3" lineNum="8" parent="globals/HBDView" pc="268435510" symbol="&lt;init&gt;"/>
-        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="4" lineNum="26" parent="globals/HBDView" pc="268435529" symbol="compute"/>
-        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="4" lineNum="28" parent="globals/HBDView" pc="268435533" symbol="compute"/>
-        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="4" lineNum="29" parent="globals/HBDView" pc="268435546" symbol="compute"/>
-        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="4" lineNum="30" parent="globals/HBDView" pc="268435571" symbol="compute"/>
-        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="4" lineNum="31" parent="globals/HBDView" pc="268435600" symbol="compute"/>
-        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="4" lineNum="33" parent="globals/HBDView" pc="268435610" symbol="compute"/>
-        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="4" lineNum="35" parent="globals/HBDView" pc="268435626" symbol="compute"/>
-        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="4" lineNum="37" parent="globals/HBDView" pc="268435637" symbol="compute"/>
-        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="4" lineNum="41" parent="globals/HBDView" pc="268435659" symbol="compute"/>
-        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="5" lineNum="14" parent="globals/HBDView" pc="268435668" symbol="initialize"/>
-        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="5" lineNum="15" parent="globals/HBDView" pc="268435672" symbol="initialize"/>
-        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="5" lineNum="16" parent="globals/HBDView" pc="268435690" symbol="initialize"/>
-        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="5" lineNum="17" parent="globals/HBDView" pc="268435707" symbol="initialize"/>
-        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="5" lineNum="18" parent="globals/HBDView" pc="268435723" symbol="initialize"/>
-        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="5" lineNum="19" parent="globals/HBDView" pc="268435736" symbol="initialize"/>
-        <entry filename="E:\\GitHub\\HBD\\source\\HBDApp.mc" id="6" lineNum="5" parent="globals/HBDApp" pc="268435750" symbol="&lt;init&gt;"/>
-        <entry filename="E:\\GitHub\\HBD\\source\\HBDApp.mc" id="7" lineNum="12" parent="globals/HBDApp" pc="268435769" symbol="onStart"/>
-        <entry filename="E:\\GitHub\\HBD\\source\\HBDApp.mc" id="8" lineNum="20" parent="globals/HBDApp" pc="268435772" symbol="getInitialView"/>
-        <entry filename="E:\\GitHub\\HBD\\source\\HBDApp.mc" id="8" lineNum="21" parent="globals/HBDApp" pc="268435774" symbol="getInitialView"/>
-        <entry filename="E:\\GitHub\\HBD\\source\\HBDApp.mc" id="9" lineNum="7" parent="globals/HBDApp" pc="268435815" symbol="initialize"/>
-        <entry filename="E:\\GitHub\\HBD\\source\\HBDApp.mc" id="9" lineNum="8" parent="globals/HBDApp" pc="268435817" symbol="initialize"/>
-        <entry filename="E:\\GitHub\\HBD\\source\\HBDApp.mc" id="10" lineNum="16" parent="globals/HBDApp" pc="268435836" symbol="onStop"/>
+        <entry filename="e:\\GitHub\\HBD\\bin\\gen\\006-B3993-00\\source\\Rez.mcgen" id="2" lineNum="7" parent="globals/Rez" pc="268435481" symbol="&lt;init&gt;"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="3" lineNum="11" parent="globals/HBDView" pc="268435501" symbol="&lt;init&gt;"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDApp.mc" id="4" lineNum="5" parent="globals/HBDApp" pc="268435513" symbol="&lt;init&gt;"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="5" lineNum="47" parent="globals/HBDView" pc="268435525" symbol="compute"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="5" lineNum="49" parent="globals/HBDView" pc="268435528" symbol="compute"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="5" lineNum="50" parent="globals/HBDView" pc="268435536" symbol="compute"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="5" lineNum="51" parent="globals/HBDView" pc="268435558" symbol="compute"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="5" lineNum="52" parent="globals/HBDView" pc="268435580" symbol="compute"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="5" lineNum="53" parent="globals/HBDView" pc="268435595" symbol="compute"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="5" lineNum="54" parent="globals/HBDView" pc="268435607" symbol="compute"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="5" lineNum="56" parent="globals/HBDView" pc="268435614" symbol="compute"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="5" lineNum="61" parent="globals/HBDView" pc="268435635" symbol="compute"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="5" lineNum="62" parent="globals/HBDView" pc="268435654" symbol="compute"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="6" lineNum="21" parent="globals/HBDView" pc="268435660" symbol="initialize"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="6" lineNum="22" parent="globals/HBDView" pc="268435663" symbol="initialize"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="6" lineNum="23" parent="globals/HBDView" pc="268435675" symbol="initialize"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="6" lineNum="24" parent="globals/HBDView" pc="268435687" symbol="initialize"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="6" lineNum="25" parent="globals/HBDView" pc="268435695" symbol="initialize"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="6" lineNum="26" parent="globals/HBDView" pc="268435703" symbol="initialize"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="6" lineNum="27" parent="globals/HBDView" pc="268435727" symbol="initialize"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="6" lineNum="28" parent="globals/HBDView" pc="268435735" symbol="initialize"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="6" lineNum="29" parent="globals/HBDView" pc="268435747" symbol="initialize"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="6" lineNum="33" parent="globals/HBDView" pc="268435763" symbol="initialize"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDView.mc" id="6" lineNum="40" parent="globals/HBDView" pc="268435810" symbol="initialize"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDApp.mc" id="7" lineNum="12" parent="globals/HBDApp" pc="268435826" symbol="onStart"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDApp.mc" id="8" lineNum="20" parent="globals/HBDApp" pc="268435829" symbol="getInitialView"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDApp.mc" id="8" lineNum="21" parent="globals/HBDApp" pc="268435831" symbol="getInitialView"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDApp.mc" id="9" lineNum="7" parent="globals/HBDApp" pc="268435861" symbol="initialize"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDApp.mc" id="9" lineNum="8" parent="globals/HBDApp" pc="268435863" symbol="initialize"/>
+        <entry filename="E:\\GitHub\\HBD\\source\\HBDApp.mc" id="10" lineNum="16" parent="globals/HBDApp" pc="268435876" symbol="onStop"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
-        <entry id="7" module="true" symbol="globals/Rez/Menus"/>
-        <entry field="true" id="14" symbol="mValue"/>
-        <entry field="true" id="13" symbol="mRHR"/>
+        <entry id="8389849" symbol="units"/>
+        <entry id="8390424" module="true" symbol="Storage"/>
+        <entry field="true" id="9" symbol="mValue"/>
+        <entry field="true" id="7" symbol="HbdField"/>
+        <entry field="true" id="8" symbol="mRHR"/>
         <entry id="8388647" module="true" symbol="UserProfile"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-        <entry field="true" id="16" symbol="AppName"/>
-        <entry id="8" module="true" symbol="globals/Rez/Strings"/>
-        <entry id="8388772" module="true" object="true" symbol="Fonts"/>
+        <entry field="true" id="10" symbol="use_rhr"/>
+        <entry field="true" id="12" symbol="AppName"/>
+        <entry id="4" module="true" symbol="globals/Rez/Strings"/>
+        <entry field="true" id="13" symbol="boolean_title"/>
         <entry id="8388631" module="true" symbol="Activity"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
         <entry id="2" module="true" symbol="globals/Rez"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
-        <entry id="10" object="true" symbol="HBDView"/>
-        <entry id="12" module="true" symbol="Menus"/>
+        <entry id="6" object="true" symbol="HBDView"/>
         <entry id="8389275" method="true" symbol="getApp"/>
-        <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+        <entry field="true" id="14" symbol="field_graph_label"/>
         <entry field="true" id="8388738" symbol="currentSpeed"/>
         <entry id="8389137" method="true" symbol="compute"/>
-        <entry id="5" module="true" symbol="globals/Rez/JsonData"/>
         <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
         <entry id="8388644" module="true" symbol="System"/>
         <entry id="8388645" module="true" symbol="Time"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
         <entry id="8388640" module="true" symbol="Lang"/>
-        <entry id="8390088" module="true" object="true" symbol="JsonData"/>
-        <entry field="true" id="15" symbol="LauncherIcon"/>
+        <entry field="true" id="16" symbol="field_units"/>
+        <entry field="true" id="11" symbol="LauncherIcon"/>
         <entry id="8388610" symbol="statics"/>
         <entry id="8389350" module="true" symbol="globals"/>
-        <entry id="9" object="true" symbol="HBDApp"/>
+        <entry id="5" object="true" symbol="HBDApp"/>
         <entry id="8388770" module="true" object="true" symbol="Strings"/>
         <entry id="8388702" method="true" symbol="initialize"/>
         <entry id="8389279" method="true" symbol="onStart"/>
         <entry field="true" id="8388747" symbol="currentHeartRate"/>
         <entry id="8389280" method="true" symbol="getInitialView"/>
         <entry id="8389281" method="true" symbol="onStop"/>
-        <entry id="11" module="true" symbol="Layouts"/>
-        <entry id="4" module="true" symbol="globals/Rez/Fonts"/>
+        <entry id="8389847" symbol="mesgType"/>
+        <entry field="true" id="15" symbol="field_label"/>
         <entry id="8388635" module="true" symbol="Application"/>
     </symbolTable>
     <localVars>
-        <entry arg="true" endPc="268435667" name="info" stackId="1" startPc="268435529"/>
-        <entry endPc="268435652" name="delta" stackId="2" startPc="268435600"/>
-        <entry endPc="268435652" name="v" stackId="3" startPc="268435600"/>
-        <entry endPc="268435748" name="profile" stackId="1" startPc="268435672"/>
+        <entry arg="true" endPc="268435659" name="info" stackId="1" startPc="268435525"/>
+        <entry endPc="268435628" name="delta" stackId="2" startPc="268435580"/>
+        <entry endPc="268435628" name="v" stackId="3" startPc="268435580"/>
+        <entry endPc="268435759" name="profile" stackId="1" startPc="268435735"/>
     </localVars>
+    <deviceInfo deviceVersion="4866e5192c0c99025597cd8e6e841f3d774b64f7" partNumber="006-B3993-00"/>
     <annotations>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="field_graph_label"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="field_label"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="boolean_title"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="field_units"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
     </annotations>
     <dataEntryOffsetMappings>
-        <dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
-        <dataEntry label="globals/Rez" offset="158" parentId="globals" symbolId="Rez" type="module"/>
-        <dataEntry label="globals/HBDView" offset="237" parentId="globals" symbolId="HBDView" type="class"/>
-        <dataEntry label="globals/HBDApp" offset="308" parentId="globals" symbolId="HBDApp" type="class"/>
-        <dataEntry label="globals/Rez/Drawables" offset="379" parentId="Rez" symbolId="Drawables" type="module"/>
-        <dataEntry label="globals/Rez/Layouts" offset="418" parentId="Rez" symbolId="Layouts" type="module"/>
-        <dataEntry label="globals/Rez/Menus" offset="449" parentId="Rez" symbolId="Menus" type="module"/>
-        <dataEntry label="globals/Rez/Fonts" offset="480" parentId="Rez" symbolId="Fonts" type="module"/>
-        <dataEntry label="globals/Rez/Strings" offset="511" parentId="Rez" symbolId="Strings" type="module"/>
-        <dataEntry label="globals/Rez/JsonData" offset="550" parentId="Rez" symbolId="JsonData" type="module"/>
+        <dataEntry label="globals" offset="49" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/Rez" offset="116" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/HBDView" offset="160" parentId="globals" symbolId="HBDView" type="class"/>
+        <dataEntry label="globals/HBDApp" offset="249" parentId="globals" symbolId="HBDApp" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="320" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="355" parentId="Rez" symbolId="Strings" type="module"/>
     </dataEntryOffsetMappings>
     <functions>
-        <functionEntry accessMode="public" endPc="268435485" name="getApp" startPc="268435460">
+        <functionEntry accessMode="public" endPc="268435480" name="getApp" startPc="268435460">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435509" name="&lt;init&gt;" parent="Rez" startPc="268435486">
+        <functionEntry accessMode="public" endPc="268435500" name="&lt;init&gt;" parent="Rez" startPc="268435481">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435528" name="&lt;init&gt;" parent="HBDView" startPc="268435510">
+        <functionEntry accessMode="public" endPc="268435512" name="&lt;init&gt;" parent="HBDView" startPc="268435501">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435667" name="compute" parent="HBDView" startPc="268435529">
-            <param id="info"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435749" name="initialize" parent="HBDView" startPc="268435668">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435768" name="&lt;init&gt;" parent="HBDApp" startPc="268435750">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435771" name="onStart" parent="HBDApp" startPc="268435769">
-            <param id="state"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435814" name="getInitialView" parent="HBDApp" startPc="268435772">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435835" name="initialize" parent="HBDApp" startPc="268435815">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435838" name="onStop" parent="HBDApp" startPc="268435836">
-            <param id="state"/>
+        <functionEntry accessMode="public" endPc="268435524" name="&lt;init&gt;" parent="HBDApp" startPc="268435513">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Menus">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Fonts">
-            <documentation/>
-        </functionEntry>
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
+        <functionEntry accessMode="public" endPc="268435659" name="compute" parent="HBDView" startPc="268435525">
+            <param id="info"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435825" name="initialize" parent="HBDView" startPc="268435660">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435828" name="onStart" parent="HBDApp" startPc="268435826">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435860" name="getInitialView" parent="HBDApp" startPc="268435829">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435875" name="initialize" parent="HBDApp" startPc="268435861">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435878" name="onStop" parent="HBDApp" startPc="268435876">
+            <param id="state"/>
             <documentation/>
         </functionEntry>
     </functions>

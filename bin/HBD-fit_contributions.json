@@ -1,0 +1,21 @@
+{
+  "datafields" : [ {
+    "id" : 0,
+    "chart-visible" : true,
+    "activity-visible" : false,
+    "lap-visible" : false,
+    "chart-title-key" : "field_graph_label",
+    "label-key" : "field_label",
+    "unit-label-key" : "field_units",
+    "sort-order" : 0,
+    "precision" : 2,
+    "fill-color" : "rgba(255, 0, 0, 1.0)"
+  } ],
+  "strings" : {
+    "default" : {
+      "field_graph_label" : "HBD beta",
+      "field_label" : "HBD beta",
+      "field_units" : "m/b"
+    }
+  }
+}

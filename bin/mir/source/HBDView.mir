@@ -9,141 +9,198 @@ import Toybox.WatchUi;
 [ @file = "E:\GitHub\HBD\source\HBDView.mc"; @line = 5; ]
 import Toybox.UserProfile;
 [ @file = "E:\GitHub\HBD\source\HBDView.mc"; @line = 6; ]
-using Toybox.System;
+import Toybox.System;
+[ @file = "E:\GitHub\HBD\source\HBDView.mc"; @line = 7; ]
+import Toybox.Application;
 [ @file = "E:\GitHub\HBD\source\HBDView.mc"; @line = 8; ]
+import Toybox.Application.Storage;
+[ @file = "E:\GitHub\HBD\source\HBDView.mc"; @line = 9; ]
+using Toybox.FitContributor as :Fit;
+[ @file = "E:\GitHub\HBD\source\HBDView.mc"; @line = 11; ]
 class HBDView extends WatchUi.SimpleDataField{
-    [ @file = "E:\GitHub\HBD\source\HBDView.mc"; @line = 8; ]
+    [ @file = "E:\GitHub\HBD\source\HBDView.mc"; @line = 11; ]
     <init> {
     }
-    [ @file = "E:\GitHub\HBD\source\HBDView.mc"; @line = 8; ]
+    [ @file = "E:\GitHub\HBD\source\HBDView.mc"; @line = 11; ]
     static
     <init> {
     }
-    [ @file = "E:\GitHub\HBD\source\HBDView.mc"; @line = 10; @position = 15; ]
+    [ @file = "E:\GitHub\HBD\source\HBDView.mc"; @line = 13; @position = 8; ]
+    var HbdField = null;
+    [ @file = "E:\GitHub\HBD\source\HBDView.mc"; @line = 14; @position = 15; ]
     protected
     var mValue;
-    [ @file = "E:\GitHub\HBD\source\HBDView.mc"; @line = 11; @position = 15; ]
+    [ @file = "E:\GitHub\HBD\source\HBDView.mc"; @line = 15; @position = 15; ]
     protected
     var mRHR as Numeric;
-    [ @file = "E:\GitHub\HBD\source\HBDView.mc"; @line = 14; ]
+    [ @file = "E:\GitHub\HBD\source\HBDView.mc"; @line = 16; @position = 8; ]
+    var use_rhr;
+    [ @file = "E:\GitHub\HBD\source\HBDView.mc"; @line = 18; @position = 10; ]
+    const HBD_FIELD_ID = 0;
+    [ @file = "E:\GitHub\HBD\source\HBDView.mc"; @line = 21; ]
     function initialize() as Void {
-E_GitHub_HBD_source_HBDView_mc_14_26_start:
-[ "E:\GitHub\HBD\source\HBDView.mc" 15 8 ]
+E_GitHub_HBD_source_HBDView_mc_21_26_41_4_start:
+[ "E:\GitHub\HBD\source\HBDView.mc" 22 8 ]
         %tmp.2 = getv ? :SimpleDataField;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-[ "E:\GitHub\HBD\source\HBDView.mc" 16 8 ]
-        [ "E_GitHub_HBD_source_HBDView_mc_14_26_start" "E_GitHub_HBD_source_HBDView_mc_14_26_stop" ]
+[ "E:\GitHub\HBD\source\HBDView.mc" 23 8 ]
+        %tmp.4 = "HBD";
+        putv self :label %tmp.4;
+[ "E:\GitHub\HBD\source\HBDView.mc" 24 8 ]
+        %tmp.5 = 0.0f;
+        putv self :mValue %tmp.5;
+[ "E:\GitHub\HBD\source\HBDView.mc" 25 8 ]
+        %tmp.6 = 0;
+        putv self :mRHR %tmp.6;
+[ "E:\GitHub\HBD\source\HBDView.mc" 26 8 ]
+        %tmp.8 = getv ? :Properties;
+        %tmp.9 = getv function %tmp.8 :getValue;
+        %tmp.10 = "boolean_prop";
+        %tmp.11 = invoke %tmp.8 %tmp.9(%tmp.10);
+        putv self :use_rhr %tmp.11;
+[ "E:\GitHub\HBD\source\HBDView.mc" 27 8 ]
+E_GitHub_HBD_source_HBDView_mc_27_8_30_8_if_stmt:
+        %tmp.13 = getv ? :use_rhr;
+        bf %tmp.13 @E_GitHub_HBD_source_HBDView_mc_27_8_30_8_if_end;
+E_GitHub_HBD_source_HBDView_mc_27_8_30_8_if_true:
+E_GitHub_HBD_source_HBDView_mc_27_21_30_8_start:
+[ "E:\GitHub\HBD\source\HBDView.mc" 28 12 ]
+        [ "E_GitHub_HBD_source_HBDView_mc_27_21_30_8_start" "E_GitHub_HBD_source_HBDView_mc_27_21_30_8_stop" ]
         %profile.1 = local;
-        %tmp.4 = getm $.Toybox.UserProfile;
-        %tmp.5 = getv function %tmp.4 :getProfile;
-        %tmp.6 = invoke %tmp.4 %tmp.5();
-        lputv %profile.1 %tmp.6;
-[ "E:\GitHub\HBD\source\HBDView.mc" 17 8 ]
-        %tmp.7 = lgetv %profile.1;
-        %tmp.8 = getv %tmp.7 :restingHeartRate;
-        putv self :mRHR %tmp.8;
-[ "E:\GitHub\HBD\source\HBDView.mc" 18 8 ]
-        %tmp.9 = "HBD";
-        putv self :label %tmp.9;
-[ "E:\GitHub\HBD\source\HBDView.mc" 19 8 ]
-        %tmp.10 = 0.0f;
-        putv self :mValue %tmp.10;
-E_GitHub_HBD_source_HBDView_mc_14_26_stop:
+        %tmp.14 = getm $.Toybox.UserProfile;
+        %tmp.15 = getv function %tmp.14 :getProfile;
+        %tmp.16 = invoke %tmp.14 %tmp.15();
+        lputv %profile.1 %tmp.16;
+[ "E:\GitHub\HBD\source\HBDView.mc" 29 12 ]
+        %tmp.17 = lgetv %profile.1;
+        %tmp.18 = getv %tmp.17 :restingHeartRate;
+        putv self :mRHR %tmp.18;
+E_GitHub_HBD_source_HBDView_mc_27_21_30_8_stop:
+        goto @E_GitHub_HBD_source_HBDView_mc_27_8_30_8_if_end;
+E_GitHub_HBD_source_HBDView_mc_27_8_30_8_if_end:
+[ "E:\GitHub\HBD\source\HBDView.mc" 33 8 ]
+        %tmp.19 = self;
+        %tmp.20 = getv function %tmp.19 :createField;
+        %tmp.21 = "HBD";
+        %tmp.23 = getv ? :HBD_FIELD_ID;
+        %tmp.25 = getv ? :FitContributor;
+        %tmp.26 = getv %tmp.25 :DATA_TYPE_FLOAT;
+        %tmp.27 = newd 2;
+        %tmp.29 = const :mesgType;
+        %tmp.30 = getm $.Toybox.FitContributor;
+        %tmp.31 = getv %tmp.30 :MESG_TYPE_RECORD;
+        %tmp.32 = dup %tmp.27;
+        %tmp.33 = aputv %tmp.32 %tmp.29 %tmp.31;
+        %tmp.35 = const :units;
+        %tmp.36 = "m";
+        %tmp.37 = dup %tmp.33;
+        %tmp.38 = aputv %tmp.37 %tmp.35 %tmp.36;
+        %tmp.39 = invoke %tmp.19 %tmp.20(%tmp.21, %tmp.23, %tmp.26, %tmp.38);
+        putv self :HbdField %tmp.39;
+[ "E:\GitHub\HBD\source\HBDView.mc" 40 8 ]
+        %tmp.41 = getv ? :HbdField;
+        %tmp.42 = getv function %tmp.41 :setData;
+        %tmp.43 = 0.0;
+        invoke %tmp.41 %tmp.42(%tmp.43);
+E_GitHub_HBD_source_HBDView_mc_21_26_41_4_stop:
     }
-    [ @file = "E:\GitHub\HBD\source\HBDView.mc"; @line = 26; ]
+    [ @file = "E:\GitHub\HBD\source\HBDView.mc"; @line = 47; ]
     function compute(info as Activity.Info) as Numeric or Duration or String or Null {
-E_GitHub_HBD_source_HBDView_mc_26_85_start:
-[ "E:\GitHub\HBD\source\HBDView.mc" 28 8 ]
+E_GitHub_HBD_source_HBDView_mc_47_85_63_4_start:
+[ "E:\GitHub\HBD\source\HBDView.mc" 49 8 ]
         %tmp.1 = 0.0;
         putv self :mValue %tmp.1;
-[ "E:\GitHub\HBD\source\HBDView.mc" 29 8 ]
-E_GitHub_HBD_source_HBDView_mc_29_8_if_stmt:
-E_GitHub_HBD_source_HBDView_mc_29_12_begin:
+[ "E:\GitHub\HBD\source\HBDView.mc" 50 8 ]
+E_GitHub_HBD_source_HBDView_mc_50_8_59_8_if_stmt:
+E_GitHub_HBD_source_HBDView_mc_50_12_50_67_begin:
         %tmp.3 = lgetv %info;
         %tmp.5 = const :currentHeartRate;
         %tmp.6 = canhazplz %tmp.3 %tmp.5;
-        %tmp.7 = dup %tmp.6;
-        bf %tmp.7 @E_GitHub_HBD_source_HBDView_mc_29_44_end;
-E_GitHub_HBD_source_HBDView_mc_29_44_true:
-        %tmp.9 = lgetv %info;
-        %tmp.10 = as %tmp.9 { (interface { var currentHeartRate; }) };
-        %tmp.12 = const :currentSpeed;
-        %tmp.13 = canhazplz %tmp.10 %tmp.12;
-        %tmp.14 = and %tmp.6 %tmp.13;
-        push %tmp.14;
-E_GitHub_HBD_source_HBDView_mc_29_44_end:
-        %tmp.15 = phi [%tmp.7 @E_GitHub_HBD_source_HBDView_mc_29_12_begin] [%tmp.14 @E_GitHub_HBD_source_HBDView_mc_29_44_true] [%tmp.15 @E_GitHub_HBD_source_HBDView_mc_29_44_end];
-        bf %tmp.15 @E_GitHub_HBD_source_HBDView_mc_29_8_if_end;
-E_GitHub_HBD_source_HBDView_mc_29_8_if_true:
-E_GitHub_HBD_source_HBDView_mc_29_70_start:
-[ "E:\GitHub\HBD\source\HBDView.mc" 30 12 ]
-E_GitHub_HBD_source_HBDView_mc_30_12_if_stmt:
-E_GitHub_HBD_source_HBDView_mc_30_16_begin:
-        %tmp.16 = lgetv %info;
-        %tmp.17 = as %tmp.16 { (interface { var currentHeartRate; }) && (interface { var currentSpeed; }) };
-        %tmp.18 = getv %tmp.17 :currentHeartRate;
-        %tmp.19 = null;
-        %tmp.20 = ne %tmp.18 %tmp.19;
-        %tmp.21 = dup %tmp.20;
-        bf %tmp.21 @E_GitHub_HBD_source_HBDView_mc_30_51_end;
-E_GitHub_HBD_source_HBDView_mc_30_51_true:
-        %tmp.22 = lgetv %info;
-        %tmp.23 = as %tmp.22 { (interface { var currentHeartRate; }) && (interface { var currentSpeed; }) };
-        %tmp.24 = getv %tmp.23 :currentSpeed;
-        %tmp.25 = null;
-        %tmp.26 = ne %tmp.24 %tmp.25;
-        %tmp.27 = and %tmp.20 %tmp.26;
-        push %tmp.27;
-E_GitHub_HBD_source_HBDView_mc_30_51_end:
-        %tmp.28 = phi [%tmp.21 @E_GitHub_HBD_source_HBDView_mc_30_16_begin] [%tmp.27 @E_GitHub_HBD_source_HBDView_mc_30_51_true] [%tmp.28 @E_GitHub_HBD_source_HBDView_mc_30_51_end];
-        bf %tmp.28 @E_GitHub_HBD_source_HBDView_mc_30_12_if_end;
-E_GitHub_HBD_source_HBDView_mc_30_12_if_true:
-E_GitHub_HBD_source_HBDView_mc_30_80_start:
-[ "E:\GitHub\HBD\source\HBDView.mc" 31 16 ]
-        [ "E_GitHub_HBD_source_HBDView_mc_30_80_start" "E_GitHub_HBD_source_HBDView_mc_30_80_stop" ]
+        bf %tmp.6 @E_GitHub_HBD_source_HBDView_mc_50_8_59_8_if_end;
+E_GitHub_HBD_source_HBDView_mc_50_44_50_67_true:
+        %tmp.8 = lgetv %info;
+        %tmp.9 = as %tmp.8 { (interface { var currentHeartRate; }) };
+        %tmp.11 = const :currentSpeed;
+        %tmp.12 = canhazplz %tmp.9 %tmp.11;
+        push %tmp.12;
+E_GitHub_HBD_source_HBDView_mc_50_44_50_67_end:
+        %tmp.13 = phi [%tmp.6 @E_GitHub_HBD_source_HBDView_mc_50_12_50_67_begin] [%tmp.12 @E_GitHub_HBD_source_HBDView_mc_50_44_50_67_true] [%tmp.13 @E_GitHub_HBD_source_HBDView_mc_50_44_50_67_end];
+        bf %tmp.13 @E_GitHub_HBD_source_HBDView_mc_50_8_59_8_if_end;
+E_GitHub_HBD_source_HBDView_mc_50_8_59_8_if_true:
+E_GitHub_HBD_source_HBDView_mc_50_70_59_8_start:
+[ "E:\GitHub\HBD\source\HBDView.mc" 51 12 ]
+E_GitHub_HBD_source_HBDView_mc_51_12_58_12_if_stmt:
+E_GitHub_HBD_source_HBDView_mc_51_16_51_77_begin:
+        %tmp.14 = lgetv %info;
+        %tmp.15 = as %tmp.14 { (interface { var currentHeartRate; }) && (interface { var currentSpeed; }) };
+        %tmp.16 = getv %tmp.15 :currentHeartRate;
+        %tmp.17 = null;
+        %tmp.18 = ne %tmp.16 %tmp.17;
+        bf %tmp.18 @E_GitHub_HBD_source_HBDView_mc_51_12_58_12_if_end;
+E_GitHub_HBD_source_HBDView_mc_51_51_51_77_true:
+        %tmp.19 = lgetv %info;
+        %tmp.20 = as %tmp.19 { (interface { var currentHeartRate; }) && (interface { var currentSpeed; }) };
+        %tmp.21 = getv %tmp.20 :currentSpeed;
+        %tmp.22 = null;
+        %tmp.23 = ne %tmp.21 %tmp.22;
+        push %tmp.23;
+E_GitHub_HBD_source_HBDView_mc_51_51_51_77_end:
+        %tmp.24 = phi [%tmp.18 @E_GitHub_HBD_source_HBDView_mc_51_16_51_77_begin] [%tmp.23 @E_GitHub_HBD_source_HBDView_mc_51_51_51_77_true] [%tmp.24 @E_GitHub_HBD_source_HBDView_mc_51_51_51_77_end];
+        bf %tmp.24 @E_GitHub_HBD_source_HBDView_mc_51_12_58_12_if_end;
+E_GitHub_HBD_source_HBDView_mc_51_12_58_12_if_true:
+E_GitHub_HBD_source_HBDView_mc_51_80_58_12_start:
+[ "E:\GitHub\HBD\source\HBDView.mc" 52 16 ]
+        [ "E_GitHub_HBD_source_HBDView_mc_51_80_58_12_start" "E_GitHub_HBD_source_HBDView_mc_51_80_58_12_stop" ]
         %delta.1 = local;
-        %tmp.29 = lgetv %info;
-        %tmp.30 = as %tmp.29 { (interface { var currentHeartRate; }) && (interface { var currentSpeed; }) };
-        %tmp.31 = getv %tmp.30 :currentHeartRate;
-        %tmp.32 = as %tmp.31 Number;
-        lputv %delta.1 %tmp.32;
-[ "E:\GitHub\HBD\source\HBDView.mc" 33 16 ]
-        [ "E_GitHub_HBD_source_HBDView_mc_30_80_start" "E_GitHub_HBD_source_HBDView_mc_30_80_stop" ]
+        %tmp.25 = lgetv %info;
+        %tmp.26 = as %tmp.25 { (interface { var currentHeartRate; }) && (interface { var currentSpeed; }) };
+        %tmp.27 = getv %tmp.26 :currentHeartRate;
+        %tmp.28 = as %tmp.27 Number;
+        %tmp.30 = getv ? :mRHR;
+        %tmp.31 = sub %tmp.28 %tmp.30;
+        lputv %delta.1 %tmp.31;
+[ "E:\GitHub\HBD\source\HBDView.mc" 53 16 ]
+        [ "E_GitHub_HBD_source_HBDView_mc_51_80_58_12_start" "E_GitHub_HBD_source_HBDView_mc_51_80_58_12_stop" ]
         %v.2 = local;
-        %tmp.33 = 60;
-        %tmp.34 = lgetv %info;
-        %tmp.35 = as %tmp.34 { (interface { var currentHeartRate; }) && (interface { var currentSpeed; }) };
-        %tmp.36 = getv %tmp.35 :currentSpeed;
-        %tmp.37 = as %tmp.36 Float;
-        %tmp.38 = mul %tmp.33 %tmp.37;
-        lputv %v.2 %tmp.38;
-[ "E:\GitHub\HBD\source\HBDView.mc" 35 16 ]
-E_GitHub_HBD_source_HBDView_mc_35_16_if_stmt:
-        %tmp.40 = lgetv %delta.1;
-        %tmp.41 = 0.0;
-        %tmp.42 = gt %tmp.40 %tmp.41;
-        bf %tmp.42 @E_GitHub_HBD_source_HBDView_mc_35_16_if_end;
-E_GitHub_HBD_source_HBDView_mc_35_16_if_true:
-E_GitHub_HBD_source_HBDView_mc_36_16_start:
-[ "E:\GitHub\HBD\source\HBDView.mc" 37 20 ]
-        %tmp.44 = lgetv %v.2;
-        %tmp.46 = lgetv %delta.1;
-        %tmp.47 = div %tmp.44 %tmp.46;
-        putv self :mValue %tmp.47;
-E_GitHub_HBD_source_HBDView_mc_36_16_stop:
-        goto @E_GitHub_HBD_source_HBDView_mc_35_16_if_end;
-E_GitHub_HBD_source_HBDView_mc_35_16_if_end:
-E_GitHub_HBD_source_HBDView_mc_30_80_stop:
-        goto @E_GitHub_HBD_source_HBDView_mc_30_12_if_end;
-E_GitHub_HBD_source_HBDView_mc_30_12_if_end:
-E_GitHub_HBD_source_HBDView_mc_29_70_stop:
-        goto @E_GitHub_HBD_source_HBDView_mc_29_8_if_end;
-E_GitHub_HBD_source_HBDView_mc_29_8_if_end:
-[ "E:\GitHub\HBD\source\HBDView.mc" 41 8 ]
-        %tmp.49 = getv ? :mValue;
-        ret %tmp.49;
-E_GitHub_HBD_source_HBDView_mc_26_85_stop:
+        %tmp.32 = 60;
+        %tmp.33 = lgetv %info;
+        %tmp.34 = as %tmp.33 { (interface { var currentHeartRate; }) && (interface { var currentSpeed; }) };
+        %tmp.35 = getv %tmp.34 :currentSpeed;
+        %tmp.36 = as %tmp.35 Float;
+        %tmp.37 = mul %tmp.32 %tmp.36;
+        lputv %v.2 %tmp.37;
+[ "E:\GitHub\HBD\source\HBDView.mc" 54 16 ]
+E_GitHub_HBD_source_HBDView_mc_54_16_57_16_if_stmt:
+        %tmp.39 = lgetv %delta.1;
+        %tmp.40 = 0.0;
+        %tmp.41 = gt %tmp.39 %tmp.40;
+        bf %tmp.41 @E_GitHub_HBD_source_HBDView_mc_54_16_57_16_if_end;
+E_GitHub_HBD_source_HBDView_mc_54_16_57_16_if_true:
+E_GitHub_HBD_source_HBDView_mc_55_16_57_16_start:
+[ "E:\GitHub\HBD\source\HBDView.mc" 56 20 ]
+        %tmp.43 = lgetv %v.2;
+        %tmp.45 = lgetv %delta.1;
+        %tmp.46 = div %tmp.43 %tmp.45;
+        putv self :mValue %tmp.46;
+E_GitHub_HBD_source_HBDView_mc_55_16_57_16_stop:
+        goto @E_GitHub_HBD_source_HBDView_mc_54_16_57_16_if_end;
+E_GitHub_HBD_source_HBDView_mc_54_16_57_16_if_end:
+E_GitHub_HBD_source_HBDView_mc_51_80_58_12_stop:
+        goto @E_GitHub_HBD_source_HBDView_mc_51_12_58_12_if_end;
+E_GitHub_HBD_source_HBDView_mc_51_12_58_12_if_end:
+E_GitHub_HBD_source_HBDView_mc_50_70_59_8_stop:
+        goto @E_GitHub_HBD_source_HBDView_mc_50_8_59_8_if_end;
+E_GitHub_HBD_source_HBDView_mc_50_8_59_8_if_end:
+[ "E:\GitHub\HBD\source\HBDView.mc" 61 8 ]
+        %tmp.48 = getv ? :HbdField;
+        %tmp.49 = getv function %tmp.48 :setData;
+        %tmp.51 = getv ? :mValue;
+        invoke %tmp.48 %tmp.49(%tmp.51);
+[ "E:\GitHub\HBD\source\HBDView.mc" 62 8 ]
+        %tmp.53 = getv ? :mValue;
+        ret %tmp.53;
+E_GitHub_HBD_source_HBDView_mc_47_85_63_4_stop:
     }
 }
 [ @file = "E:\GitHub\HBD\source\HBDView.mc"; @line = 1; ]

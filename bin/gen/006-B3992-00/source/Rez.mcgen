@@ -22,6 +22,7 @@ module Rez {
     } // Menus
 
     module Strings {
+        (:initialized) var boolean_title as Symbol;
         (:initialized) var AppName as Symbol;
     } // Strings
 
