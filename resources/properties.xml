@@ -14,8 +14,8 @@
     </settings>
 
     <strings>
-        <string id="field_label">HBD beta</string>
-        <string id="field_graph_label">HBD beta</string>
+        <string id="field_label">HBD</string>
+        <string id="field_graph_label">HBD</string>
         <string id="field_units">m/b</string>
     </strings>
 

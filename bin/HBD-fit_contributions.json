@@ -13,8 +13,8 @@
   } ],
   "strings" : {
     "default" : {
-      "field_graph_label" : "HBD beta",
-      "field_label" : "HBD beta",
+      "field_graph_label" : "HBD",
+      "field_label" : "HBD",
       "field_units" : "m/b"
     }
   }
