@@ -10,6 +10,17 @@
     "sort-order" : 0,
     "precision" : 2,
     "fill-color" : "rgba(255, 0, 0, 1.0)"
+  }, {
+    "id" : 1,
+    "chart-visible" : false,
+    "activity-visible" : true,
+    "lap-visible" : false,
+    "chart-title-key" : null,
+    "label-key" : "field_label",
+    "unit-label-key" : "field_units",
+    "sort-order" : 1,
+    "precision" : 2,
+    "fill-color" : null
   } ],
   "strings" : {
     "default" : {

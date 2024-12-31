@@ -4,7 +4,10 @@
     </properties>
 
     <strings>
-       <string id="boolean_title">Use rest heart rate</string>
+        <string id="boolean_title">Use rest heart rate</string>
+        <string id="field_label">HBD</string>
+        <string id="field_graph_label">HBD</string>
+        <string id="field_units">m/b</string>
     </strings>
 
     <settings>
@@ -13,16 +16,21 @@
         </setting>
     </settings>
 
-    <strings>
-        <string id="field_label">HBD</string>
-        <string id="field_graph_label">HBD</string>
-        <string id="field_units">m/b</string>
-    </strings>
-
     <fitContributions>
-        <fitField id="0" displayInChart="true" sortOrder = "0" precision="2"
-        chartTitle="@Strings.field_graph_label" dataLabel="@Strings.field_label"
-        unitLabel="@Strings.field_units" fillColor="#FF0000" />
-    </fitContributions>
+        <fitField id="0"
+        displayInChart="true"
+        sortOrder = "0"
+        precision="2"
+        chartTitle="@Strings.field_graph_label"
+        dataLabel="@Strings.field_label"
+        unitLabel="@Strings.field_units"
+        fillColor="#FF0000" />
 
+        <fitField id="1"
+        displayInActivitySummary="true"
+        sortOrder="1"
+        precision="2"
+        dataLabel="@Strings.field_label"
+        unitLabel="@Strings.field_units" />
+    </fitContributions>
 </resources>
