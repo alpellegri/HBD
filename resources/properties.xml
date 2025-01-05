@@ -1,17 +1,20 @@
 <resources>
     <properties>
-        <property id="boolean_prop" type="boolean">false</property>
+        <property id="boolean_prop_use_rhr" type="boolean">false</property>
+        <property id="boolean_prop_use_power" type="boolean">false</property>
     </properties>
 
     <strings>
-        <string id="boolean_title">Use rest heart rate</string>
-        <string id="field_label">HBD</string>
-        <string id="field_graph_label">HBD</string>
-        <string id="field_units">m/b</string>
+        <string id="boolean_use_rhr_title">Use Rest Heart Rate</string>
+        <string id="boolean_use_power_title">Use Power instead of Velocity (experimental)</string>
+        <string id="field_units"> </string>
     </strings>
 
     <settings>
-        <setting propertyKey="@Properties.boolean_prop" title="@Strings.boolean_title">
+        <setting propertyKey="@Properties.boolean_prop_use_rhr" title="@Strings.boolean_use_rhr_title">
+            <settingConfig type="boolean" />
+        </setting>
+        <setting propertyKey="@Properties.boolean_prop_use_power" title="@Strings.boolean_use_power_title">
             <settingConfig type="boolean" />
         </setting>
     </settings>
@@ -21,8 +24,8 @@
         displayInChart="true"
         sortOrder = "0"
         precision="2"
-        chartTitle="@Strings.field_graph_label"
-        dataLabel="@Strings.field_label"
+        chartTitle="@Strings.AppName"
+        dataLabel="@Strings.AppName"
         unitLabel="@Strings.field_units"
         fillColor="#FF0000" />
 
@@ -30,7 +33,7 @@
         displayInActivitySummary="true"
         sortOrder="1"
         precision="2"
-        dataLabel="@Strings.field_label"
+        dataLabel="@Strings.AppName"
         unitLabel="@Strings.field_units" />
     </fitContributions>
 </resources>
