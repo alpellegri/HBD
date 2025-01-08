@@ -13,7 +13,7 @@ class HBDView extends WatchUi.SimpleDataField {
 
     hidden var HbdFieldPlot = null;
     hidden var HbdFieldStat = null;
-    hidden var mRHR as Numeric;
+    hidden var mRHR as Number;
     hidden var use_rhr;
     hidden var use_power;
 
@@ -53,40 +53,26 @@ class HBDView extends WatchUi.SimpleDataField {
         HbdFieldStat.setData(0.0);
     }
 
-    // The given info object contains all the current workout
-    // information. Calculate a value and return it in this method.
-    // Note that compute() and onUpdate() are asynchronous, and there is no
-    // guarantee that compute() will be called before onUpdate().
+    function calculateValue(heartRate as Number, speed as Float, power as Number) as Float {
+        var out = 0.0;
+        if (heartRate != null && speed != null && power != null) {
+            var value = (use_power == true) ? power : speed;
+            var delta = heartRate - mRHR;
+            var v = 60 * value;
+            if (delta > 0.0) {
+                out = v / delta;
+            }
+        }
+        return out;
+    }
+
     function compute(info as Activity.Info) as Numeric or Duration or String or Null {
-        // See Activity.Info in the documentation for available information.
-        var plotValue = 0.0;
-        var statValue = 0.0;
 
-        if ((info.currentHeartRate != null) &&
-            (info.currentSpeed != null) &&
-            (info.currentPower != null)) {
-            var value = (use_power == true) ? (info.currentPower as Float) : (info.currentSpeed as Float);
-            var delta = (info.currentHeartRate as Number) - mRHR;
-            var v = 60*value;
-            if (delta > 0.0)
-            {
-                plotValue = v/delta;
-            }
-        }
-        HbdFieldPlot.setData(plotValue);
-
-        if ((info.averageHeartRate != null) &&
-            (info.averageSpeed != null) &&
-            (info.averagePower != null)) {
-            var value = (use_power == true) ? (info.averagePower as Float) : (info.averageSpeed as Float);
-            var delta = (info.averageHeartRate as Number) - mRHR;
-            var v = 60*value;
-            if (delta > 0.0)
-            {
-                statValue = v/delta;
-            }
-        }
+        var statValue = calculateValue(info.averageHeartRate, info.averageSpeed, info.averagePower);
         HbdFieldStat.setData(statValue);
+
+        var plotValue = calculateValue(info.currentHeartRate, info.currentSpeed, info.currentPower);
+        HbdFieldPlot.setData(plotValue);
 
         return plotValue;
     }
