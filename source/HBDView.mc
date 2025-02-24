@@ -67,11 +67,53 @@ class HBDView extends WatchUi.SimpleDataField {
     }
 
     function compute(info as Activity.Info) as Numeric or Duration or String or Null {
+        var averageHeartRate = 0.0;
+        var averageSpeed = 0.0;
+        var averagePower = 0.0;
+        var currentHeartRate = 0.0;
+        var currentSpeed = 0.0;
+        var currentPower = 0.0;
 
-        var statValue = calculateValue(info.averageHeartRate, info.averageSpeed, info.averagePower);
+        if (info has :averageHeartRate) {
+            if (info.averageHeartRate != null) {
+                averageHeartRate = info.averageHeartRate;
+            }
+        }
+
+        if (info has :averageSpeed) {
+            if (info.averageSpeed != null) {
+                averageSpeed = info.averageSpeed;
+            }
+        }
+
+        if (info has :averagePower) {
+            if (info.averagePower != null) {
+                averagePower = info.averagePower;
+            }
+        }
+
+        var statValue = calculateValue(averageHeartRate, averageSpeed, averagePower);
         HbdFieldStat.setData(statValue);
 
-        var plotValue = calculateValue(info.currentHeartRate, info.currentSpeed, info.currentPower);
+        if (info has :currentHeartRate) {
+            if (info.currentHeartRate != null) {
+                currentHeartRate = info.currentHeartRate;
+            }
+        }
+
+        if (info has :currentSpeed) {
+            if (info.currentSpeed != null) {
+                currentSpeed = info.currentSpeed;
+            }
+        } 
+
+        if (info has :currentPower) {
+            if (info.currentPower != null) {
+                currentPower = info.currentPower;
+            }
+        }
+
+        var plotValue = calculateValue(currentHeartRate, currentSpeed, currentPower);
         HbdFieldPlot.setData(plotValue);
 
         return plotValue;
